@@ -4,3 +4,9 @@ phase 1:
 - left click on country allows to show relations with other countries
 - right click on country allows to change values of the relationship with other countries
 - relationships will be based on rating system of many users
+- add section: top 3 movers
+
+to do:
+1. map's colors change
+2. flags change
+3. read from and save to firebase
