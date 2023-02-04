@@ -11,7 +11,7 @@ export default {
         flag:"/src/assets/Flag_of_Germany.svg"
       },
       sliderValue: 3, 
-      mapSrc: '/src/assets/map.svg'
+      mapSrc: '/src/assets/map2.svg'
     }
   },
   computed: { 
