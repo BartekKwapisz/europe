@@ -1,0 +1,6 @@
+phase 1:
+- three svg squares (let's assume Germany, Poland, Russia)
+- coursor on country shows maps
+- left click on country allows to show relations with other countries
+- right click on country allows to change values of the relationship with other countries
+- relationships will be based on rating system of many users
