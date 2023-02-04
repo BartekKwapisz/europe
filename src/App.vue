@@ -28,9 +28,11 @@ export default {
       }
     },
     relation(){ 
-      let status = ["hostile","awful","bad","neutral","good","great","perfect"]
+      let status = ["hostile","awful","bad","neutral","good","great","perfect"];
+      let color = ["red","orange","Bisque","#d8eafd","DarkSeaGreen", "GreenYellow", "lime"]
       return {
-        status: status[this.sliderValue]
+        status: status[this.sliderValue],
+        color: color[this.sliderValue]
       }
     }
   },
@@ -49,14 +51,14 @@ export default {
   <div class="grid-container"> 
     <div class="grid-item header"><img :src="mapSrc"/></div> 
     <div class="grid-item">{{selected_country.name}}</div>
-    <div class="grid-item">relation</div>
+    <div class="grid-item">relation:</div>
     <div class="grid-item">{{compared_country.name}}</div> 
     <div class="grid-item"><img class="flag" v-bind:src="selected_country.flag"/></div>
-    <div class="grid-item">
+    <div class="grid-item" :style="{ backgroundColor: relation.color }">
     <p>{{relation.status}}</p>
     </div>
      <div class="grid-item"><img class="flag" v-bind:src="compared_country.flag"/></div>
-    <div class="grid-item">github</div>
+    <div class="grid-item"><a href="https://github.com/BartekKwapisz/europe" target="_blank">github</a></div>
     <div class="grid-item"><input type="range" v-model="sliderValue" min="0" max="6"/></div>
     <div class="grid-item"><button type="submit" @click="onClickHandler">submit</button></div>
   </div> 
