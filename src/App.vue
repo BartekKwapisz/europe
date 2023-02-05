@@ -1,5 +1,9 @@
-<script>
+<script> 
+import SvgMap from '/src/assets/SvgMap.vue';
 export default {
+  components: { 
+    SvgMap
+  },
   data() {
     return {
       poland: {
@@ -69,9 +73,13 @@ watch: {
 
 <template>
   <div class="grid-container">
-    <div class="grid-item header"><img :src="mapSrc" /></div>
+    <div class="grid-item header">
+      <SvgMap />  
+    </div>
     <div class="grid-item">{{ selected_country.name }}</div>
-    <div class="grid-item">relation:</div>
+    <div class="grid-item">relation:
+      
+    </div>
     <div class="grid-item">{{ compared_country.name }}</div>
     <div class="grid-item"><img class="flag" v-bind:src="selected_country.flag" /></div>
     <div class="grid-item" :style="{ backgroundColor: relation.color }">
