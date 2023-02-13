@@ -25,7 +25,7 @@ export default {
     // first assign on mouse over action to every country separetely
     // for(let i = 0; i <countries.length; i++) {
     //   document.getElementById(countries[i]).onmouseover = function () { color(countries[i]) };
-    // };
+    // }; -> use mounted or ref
 
     // then fire function that will change the name of the compared country on the right
     // function color(country){
@@ -64,6 +64,9 @@ methods: {
   onClickHandler() {
     alert("hej")
   }
+},
+created: {
+
 },
 watch: {
 
