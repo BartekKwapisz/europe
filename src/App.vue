@@ -65,7 +65,7 @@ methods: {
     alert("hej")
   }
 },
-created: {
+created() {
 
 },
 watch: {
